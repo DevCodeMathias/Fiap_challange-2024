@@ -1,23 +1,28 @@
 package Service;
 
+import Model.Challenge;
 import Model.User;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Menu {
+
+    private List<Challenge> ListChallenge;
+
+    public Menu() {
+        ListChallenge = new ArrayList<>();
+    }
+
     public void ShowMenu(){
         User UserLog = new User();
         Scanner reader = new Scanner(System.in);
         String menu = """
             1. Iniciar Sessão de Treinamento
-            2. Ver Desafios
+            2. Ver Desafios //vai me mostra uma lista de desafios
             3. Ver Feedback
             4. Ver Ranking
-            5. Iniciar Simulação VR
-            6. Usar Ferramenta de Cirurgia AR
-            7. Acompanhar Progresso
-            8. Configurar Ambiente de Simulação
-            9. Ver Pontuação   
             0. Sair
             Selecione a sua opção ->                             
             """;
@@ -35,21 +40,20 @@ public class Menu {
                 break;
             case 4:
                 break;
-            case 5:
-                break;
-            case 6:
-                break;
-            case 7:
-                break;
-            case 8:
-                break;
-            case 9:
-                break;
 
             default:
                 System.out.println("Opção inválida");
                 break;
         }
+
+    }
+
+    public void intoChallenge(){
+        Challenge challengeOne = new Challenge();
+        Challenge challengeTwo = new Challenge();
+        ListChallenge.add(challengeOne);
+        ListChallenge.add(challengeTwo);
+
     }
 
 }

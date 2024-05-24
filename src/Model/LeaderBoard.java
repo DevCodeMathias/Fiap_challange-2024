@@ -19,6 +19,7 @@ public class LeaderBoard {
 
     private void rankingorder(){
         //ordenação de ranking
+        //percorrer a lista pegar o ponto e chamar metodo de ordenação
     }
 
 }

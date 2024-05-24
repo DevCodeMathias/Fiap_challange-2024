@@ -12,4 +12,12 @@ public class User {
    public void setName(String name) {
       Name = name;
    }
+
+   public int getPoints() {
+      return Points;
+   }
+
+   public void setPoints(int points) {
+      Points = points;
+   }
 }
