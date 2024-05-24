@@ -1,12 +1,17 @@
 package Model;
 
+import javax.xml.namespace.QName;
+import java.util.List;
+
 public class Challenge {
     private int ChallangeID;
+    private String Nome;
     private String Description;
     private String DificultyLevel;
     private  Boolean IsComplet;
 
-    public Challenge(String Description, String DificultyLevel){
+    public Challenge(String Name ,String Description, String DificultyLevel){
+        this.Nome = Name;
         this.Description = Description;
         this.DificultyLevel = DificultyLevel;
         this.IsComplet = false;
@@ -52,5 +57,18 @@ public class Challenge {
         // se for completa vai retornar um feedback
     }
 
+    public String getNome() {
+        return Nome;
+    }
+
+    public void setNome(String nome) {
+        Nome = nome;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Nome"+ Nome + "Descrição: " + Description + ", Nível de Dificuldade: " + DificultyLevel;
+    }
 
 }

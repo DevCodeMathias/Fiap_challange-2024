@@ -9,6 +9,12 @@ public class User {
       return Name;
    }
 
+   public User(String Name){
+      this.Name = Name;
+      this.Points = 0;
+   }
+
+
    public void setName(String name) {
       Name = name;
    }
