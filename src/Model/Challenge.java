@@ -71,8 +71,17 @@ public class Challenge {
     public void completeChallenge(User user) {
         if (!IsComplet) {
             IsComplet = true;
-            user.setPoints(user.getPoints() + this.Points);
-            System.out.println("Desafio completo! " + Points + " pontos foram adicionados");
+
+             int getPointsByChallenge = getPoints();
+             int getPoinsByUser = user.getPoints();
+             int score = getPointsByChallenge + getPoinsByUser;
+            // o incremento está sendo feito
+
+            int teste = user.setPoints(score);
+
+            System.out.println("Desafio completo! " + this.Points + " pontos foram adicionados");
+            System.out.println(" pontuação atural " + teste );
+
         } else {
             System.out.println("Desafio já foi completado.");
         }

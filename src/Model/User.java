@@ -22,8 +22,9 @@ public class User {
       return Points;
    }
 
-   public void setPoints(int points) {
+   public int setPoints(int points) {
       Points = points;
+      return points;
    }
 
    @Override

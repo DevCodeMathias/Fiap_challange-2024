@@ -11,13 +11,12 @@ import java.util.List;
 public class TrainnerSession {
     private int SesionId;
     private User user;
-    private List<Challenge> challengesCheck; // adicionar ao construtor
+    private List<Challenge> challengesCheck;
 
 
     public TrainnerSession(User user, List<Challenge> ChallangeForyou){
         this.user = user;
         this.challengesCheck = ChallangeForyou;
-
     }
 
     public int getSesionId() {
