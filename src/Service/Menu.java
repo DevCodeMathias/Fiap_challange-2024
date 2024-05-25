@@ -10,20 +10,29 @@ import java.util.Scanner;
 
 public class Menu {
 
-    private List<String> ListChallenge;
-
-    public Menu() {
-        ListChallenge = new ArrayList<>();
-    }
+    // protótipo do banco de dados
     private Scanner reader = new Scanner(System.in);
+    private   List<Challenge> challengesPersonalizes = List.of(
+            new Challenge( "Desafio 1", "Descrição do Desafio 1", "Easy", 10),
+            new Challenge( "Desafio 2", "Descrição do Desafio 2", "Medium", 20),
+            new Challenge( "Desafio 3", "Descrição do Desafio 3", "Hard", 30)
+    );
+
+    private   List<Challenge> challengesDatabase = List.of(
+            new Challenge( "Desafio 1", "Descrição do Desafio 1", "Easy", 10),
+            new Challenge( "Desafio 2", "Descrição do Desafio 2", "Medium", 20),
+            new Challenge( "Desafio 3", "Descrição do Desafio 3", "Hard", 30),
+            new Challenge( "Desafio 1", "Descrição do Desafio 1", "Easy", 10),
+            new Challenge( "Desafio 2", "Descrição do Desafio 2", "Medium", 20),
+            new Challenge( "Desafio 3", "Descrição do Desafio 3", "Hard", 30)
+    );
 
     public void ShowMenu(){
        // User UserLog = new User();
 
         String menu = """
-            1. Iniciar Sessão de Treinamento (Perfil)
-            2. Ver Desafios 
-            3. Ver Feedback
+            1. Iniciar Sessão de Treinamento 
+            2. Ver todos Desafios 
             4. Ver Ranking
             0. Sair
             Selecione a sua opção ->                             
@@ -51,24 +60,17 @@ public class Menu {
         }
 
     }
-
-
     public  void IntoSessionTrainig(){
 
         User UserInitializer = new User("Laura");
-        TrainnerSession Sessioninittilizer = new TrainnerSession(UserInitializer);
+        TrainnerSession Sessioninittilizer = new TrainnerSession(UserInitializer,challengesPersonalizes);
         Sessioninittilizer.ShowInfoUser();
-
+        Sessioninittilizer.showUserChallenges();
     }
 
     public void intoChallenge(){
-        Challenge challengeOne = new Challenge("arco e flecha "," A precisão ao mirar e soltar a flecha exige coordenação entre os movimentos das mãos e dos olhos", "hard");
-        Challenge challengeTwo = new Challenge("pintura 3d "," jogador possa usar as mãos para pintar no espaço tridimensional. Isso requer precisão e coordenação para criar formas, desenhos e padrões.", "hard");
-        ListChallenge.add(challengeOne.toString());
-        ListChallenge.add(challengeTwo.toString());
-
-        for(int i = 0 ; i < ListChallenge.size(); i++){
-            System.out.println(ListChallenge.get(i));
+        for(int i = 0 ; i < challengesDatabase.size(); i++){
+            System.out.println(challengesDatabase.get(i));
         }
     }
 

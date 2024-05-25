@@ -9,12 +9,15 @@ public class Challenge {
     private String Description;
     private String DificultyLevel;
     private  Boolean IsComplet;
+    private int  Points;
 
-    public Challenge(String Name ,String Description, String DificultyLevel){
+    public Challenge( String Name ,String Description, String DificultyLevel, int Points){
+
         this.Nome = Name;
         this.Description = Description;
         this.DificultyLevel = DificultyLevel;
         this.IsComplet = false;
+        this.Points = Points;
     }
 
     public int getChallangeID() {
@@ -49,20 +52,30 @@ public class Challenge {
         IsComplet = complet;
     }
 
-    public void AddToBoard(){
-        //vaiadicionar no lista seção de treinamento
-    }
-
-    public void GetFeedback(){
-        // se for completa vai retornar um feedback
-    }
-
     public String getNome() {
         return Nome;
     }
 
     public void setNome(String nome) {
         Nome = nome;
+    }
+
+    public int getPoints() {
+        return Points;
+    }
+
+    public void setPoints(int points) {
+        Points = points;
+    }
+
+    public void completeChallenge(User user) {
+        if (!IsComplet) {
+            IsComplet = true;
+            user.setPoints(user.getPoints() + this.Points);
+            System.out.println("Desafio completo! " + Points + " pontos foram adicionados");
+        } else {
+            System.out.println("Desafio já foi completado.");
+        }
     }
 
 

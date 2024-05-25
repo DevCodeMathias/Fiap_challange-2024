@@ -5,15 +5,19 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
+//RESPONSÁVEL POR MOSTSRTA AS INFOS DO USER
+//REPONSÁVEL POR MOSTRAR DESAFIOS FEITOS (TIPO UM HISTÓRICO)
+
 public class TrainnerSession {
     private int SesionId;
     private User user;
-    private Time StartTime;
-    private List<Challenge> challengesToDo;
+    private List<Challenge> challengesCheck; // adicionar ao construtor
 
 
-    public TrainnerSession(User user){
+    public TrainnerSession(User user, List<Challenge> ChallangeForyou){
         this.user = user;
+        this.challengesCheck = ChallangeForyou;
+
     }
 
     public int getSesionId() {
@@ -32,18 +36,17 @@ public class TrainnerSession {
         this.user = user;
     }
 
-    public Time getStartTime() {
-        return StartTime;
-    }
-
-    public void setStartTime(Time startTime) {
-        StartTime = startTime;
-    }
-
     public  void ShowInfoUser(){
         User actualUser = this.user;
         String GetInformation = actualUser.toString();
         System.out.println(GetInformation);
+    }
+
+    public void showUserChallenges() {
+        System.out.println("Desafios do usuário:");
+        for (Challenge challenge :challengesCheck) {
+            System.out.println(challenge);
+        }
     }
 
 }
