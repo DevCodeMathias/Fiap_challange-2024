@@ -24,9 +24,9 @@ public class Menu {
             new Challenge("Desafio 1", "Descrição do Desafio 1", "Easy", 10),
             new Challenge("Desafio 2", "Descrição do Desafio 2", "Medium", 20),
             new Challenge("Desafio 3", "Descrição do Desafio 3", "Hard", 30),
-            new Challenge("Desafio 1", "Descrição do Desafio 1", "Easy", 10),
-            new Challenge("Desafio 2", "Descrição do Desafio 2", "Medium", 20),
-            new Challenge("Desafio 3", "Descrição do Desafio 3", "Hard", 30)
+            new Challenge("Desafio 4", "Descrição do Desafio 1", "Easy", 10),
+            new Challenge("Desafio 5", "Descrição do Desafio 2", "Medium", 20),
+            new Challenge("Desafio 6", "Descrição do Desafio 3", "Hard", 30)
     );
 
     private int aux = 0;
@@ -82,7 +82,7 @@ public class Menu {
 
     public void intoChallenge() {
         for (Challenge challenge : challengesDatabase) {
-            System.out.println(challenge);
+            System.out.println(challenge.displayDetails());
         }
     }
 

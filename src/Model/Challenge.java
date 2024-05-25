@@ -75,18 +75,24 @@ public class Challenge {
              int getPointsByChallenge = getPoints();
              int getPoinsByUser = user.getPoints();
              int score = getPointsByChallenge + getPoinsByUser;
-            // o incremento está sendo feito
 
-            int teste = user.setPoints(score);
+            user.setPoints(score);
 
             System.out.println("Desafio completo! " + this.Points + " pontos foram adicionados");
-            System.out.println(" pontuação atural " + teste );
-
-        } else {
-            System.out.println("Desafio já foi completado.");
         }
     }
 
+    public String displayDetails() {
+        StringBuilder details = new StringBuilder();
+        details.append("----- Detalhes do Desafio -----\n");
+        details.append("Nome: ").append(Nome).append("\n");
+        details.append("Descrição: ").append(Description).append("\n");
+        details.append("Nível de Dificuldade: ").append(DificultyLevel).append("\n");
+        details.append("Pontos: ").append(Points).append("\n");
+        details.append("Status: ").append(IsComplet ? "Completo" : "Incompleto").append("\n");
+        details.append("-----------------------------");
+        return details.toString();
+    }
 
     @Override
     public String toString() {
