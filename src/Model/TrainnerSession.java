@@ -1,6 +1,8 @@
 package Model;
 
 import java.sql.Time;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 public class TrainnerSession {
@@ -10,8 +12,8 @@ public class TrainnerSession {
     private List<Challenge> challengesToDo;
 
 
-    public TrainnerSession(){
-
+    public TrainnerSession(User user){
+        this.user = user;
     }
 
     public int getSesionId() {
@@ -38,13 +40,10 @@ public class TrainnerSession {
         StartTime = startTime;
     }
 
-    public void managerSession(Challenge challenge, boolean complete) {
-
+    public  void ShowInfoUser(){
+        User actualUser = this.user;
+        String GetInformation = actualUser.toString();
+        System.out.println(GetInformation);
     }
-
-    public void InitTraining(){
-        //iniciliza os treinamentos e atribui pontos aos usuários
-    }
-
 
 }

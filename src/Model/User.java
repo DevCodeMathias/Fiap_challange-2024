@@ -14,7 +14,6 @@ public class User {
       this.Points = 0;
    }
 
-
    public void setName(String name) {
       Name = name;
    }
@@ -25,5 +24,11 @@ public class User {
 
    public void setPoints(int points) {
       Points = points;
+   }
+
+   @Override
+   public String toString() {
+      return   Name +
+              ", Points: " + Points;
    }
 }

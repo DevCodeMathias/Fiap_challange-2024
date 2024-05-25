@@ -15,10 +15,11 @@ public class Menu {
     public Menu() {
         ListChallenge = new ArrayList<>();
     }
+    private Scanner reader = new Scanner(System.in);
 
     public void ShowMenu(){
        // User UserLog = new User();
-        Scanner reader = new Scanner(System.in);
+
         String menu = """
             1. Iniciar Sessão de Treinamento (Perfil)
             2. Ver Desafios 
@@ -51,19 +52,14 @@ public class Menu {
 
     }
 
+
     public  void IntoSessionTrainig(){
 
         User UserInitializer = new User("Laura");
-        String NameUser = UserInitializer.getName();
-        System.out.println(" Seja bem Vindo " + NameUser);
-        System.out.println("Sua pontuação é:");
-        //Simula como se o um desafio ja estivesse jogado e marcando como jogado
-        //Challenge challengeOne = new Challenge("arco e flecha "," A precisão ao mirar e soltar a flecha exige coordenação entre os movimentos das mãos e dos olhos", "hard");
-        //challengeOne.setComplet(true);
-
+        TrainnerSession Sessioninittilizer = new TrainnerSession(UserInitializer);
+        Sessioninittilizer.ShowInfoUser();
 
     }
-
 
     public void intoChallenge(){
         Challenge challengeOne = new Challenge("arco e flecha "," A precisão ao mirar e soltar a flecha exige coordenação entre os movimentos das mãos e dos olhos", "hard");
