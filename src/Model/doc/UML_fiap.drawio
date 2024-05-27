@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-27T17:23:30.807Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="1VCbpZGW1C07JUJ2YimS" version="24.4.8" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-27T19:10:47.931Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="Emtd_wMulz8qjb4E76dg" version="24.4.8" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="3361" dy="4009" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -146,6 +146,9 @@
         </mxCell>
         <mxCell id="RrUC9_B6qjAz67yPAkb7-41" value="Tipo da aula&amp;nbsp;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-2110" y="-2160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RrUC9_B6qjAz67yPAkb7-42" value="Fazer duas perspectivas&amp;nbsp;&lt;div&gt;Login aluno Login Lepic&amp;nbsp;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1520" y="-2440" width="210" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
