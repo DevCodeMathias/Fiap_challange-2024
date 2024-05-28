@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2c46845-6652-485b-af6a-49d83757e263" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/Model/doc/UML_fiap.drawio" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Challenge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Challenge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/UML_fiap.drawio" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/LeaderBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/LeaderBoard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +43,11 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Asus\Desktop\Fiap_challange-2024\src\Model\doc" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

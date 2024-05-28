@@ -17,9 +17,13 @@ public class LeaderBoard {
         UsersRank = usersRank;
     }
 
+    //retornar uma lista ordenada dos usuários
     private void rankingorder(){
-        //ordenação de ranking
-        //percorrer a lista pegar o ponto e chamar metodo de ordenação
+        int aux = 0;
+        for(int i = 0;  i <= UsersRank.size(); i++){
+           User indexUser = UsersRank.get(i);
+           int points = indexUser.getPoints();
+        }
     }
 
 }
