@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2c46845-6652-485b-af6a-49d83757e263" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/src/Model/Achievements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Certificate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/LeaderBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/LeaderBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Service/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +24,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
