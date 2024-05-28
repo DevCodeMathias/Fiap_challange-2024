@@ -1,5 +1,7 @@
 package Model;
 
+import java.awt.*;
+
 public class User {
    private String UserId;
    private String Name;
@@ -9,9 +11,9 @@ public class User {
       return Name;
    }
 
-   public User(String Name){
+   public User(String Name, int Points){
       this.Name = Name;
-      this.Points = 0;
+      this.Points = Points;
    }
 
    public void setName(String name) {
