@@ -68,7 +68,7 @@ public class Challenge {
         Points = points;
     }
 
-    public void completeChallenge(User user) {
+    public void completeChallenge(Student user) {
         if (!IsComplet) {
             IsComplet = true;
 

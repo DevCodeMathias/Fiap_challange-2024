@@ -5,33 +5,27 @@ import java.awt.*;
 public class User {
    private String UserId;
    private String Name;
-   private  int Points;
+   private String Position;
 
    public String getName() {
       return Name;
    }
 
-   public User(String Name, int Points){
+   public User(String Name, String Position){
       this.Name = Name;
-      this.Points = Points;
+      this.Position = Position;
    }
 
    public void setName(String name) {
       Name = name;
    }
 
-   public int getPoints() {
-      return Points;
+   public String getPosition() {
+      return Position;
    }
 
-   public int setPoints(int points) {
-      Points = points;
-      return points;
+   public void setPosition(String position) {
+      Position = position;
    }
 
-   @Override
-   public String toString() {
-      return   Name +
-              ", Points: " + Points;
-   }
 }

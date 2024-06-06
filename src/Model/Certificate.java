@@ -29,14 +29,6 @@ public class Certificate {
         this.issueDate = issueDate;
     }
 
-    @Override
-    public String toString() {
-        return "Certificate{" +
-                "name='" + name + '\'' +
-                ", issueDate=" + getFormattedIssueDate() +
-                '}';
-    }
-
 
     public boolean isRecent() {
         long diffInMillies = Math.abs(new Date().getTime() - issueDate.getTime());

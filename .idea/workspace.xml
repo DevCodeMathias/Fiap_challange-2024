@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2c46845-6652-485b-af6a-49d83757e263" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/Model/Achievements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Certificate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Achievements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Achievements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Certificate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Certificate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Challenge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Challenge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/LeaderBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/LeaderBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/TrainnerSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/TrainnerSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Service/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +30,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DevCodeMathias&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="dcdd0be4-a73a-45fc-850a-a9d9145789e1" />
+        <option name="url" value="https://github.com/DevCodeMathias/Fiap_challange-2024.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
