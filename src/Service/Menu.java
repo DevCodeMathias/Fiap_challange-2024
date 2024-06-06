@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Menu {
 
-
+//FALAR QUE CONTARA COM OS RECURSOS DA LEPIC PARA MELHOR TILIZAÇÃO DOS RECURSOS
 
     private Scanner reader = new Scanner(System.in);
 
@@ -38,10 +38,16 @@ public class Menu {
             Student StudentInitializer = new Student(userName,"Student",0);
             ShowMenuStudent(StudentInitializer);
         } else if (userInput == 2 ) {
-            // incializar a classe de professores
+            Teacher TeacherInitializer = new Teacher(userName, "Teacher");
+            ShowTeacherMenu(TeacherInitializer);
         }
 
     }
+    //Lado da LEPIC - PROFESSOR
+    public void ShowTeacherMenu(Teacher Initializer){
+
+    }
+
 
     public void ShowMenuStudent(Student Initializer) {
         leaderBoard.getUsersRank().add(Initializer);
@@ -87,7 +93,7 @@ public class Menu {
                 Challenge actualChallenge = challengesDatabase.get(aux);
                 System.out.println(actualChallenge);
                 actualChallenge.completeChallenge(Initializer);
-                actualChallenge.setComplet(true); // se for true ele esta completo
+                actualChallenge.setComplet(true);
                 userAchievements.addCertificate("Certificado para " + actualChallenge.getNome());
 
                 aux++;
