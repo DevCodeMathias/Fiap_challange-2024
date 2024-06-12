@@ -30,4 +30,18 @@ public class Student extends User {
                         '}';
 
     }
+   // Scanner scanner = new Scanner(System.in);
+     //   System.out.println("Enter a date you would like to schedule the tutoring session (format DD/MM/YYYY): ");
+    //String requestedDate = scanner.nextLine();
+
+    public void onlineAppointment(String RequestData, Teacher teacher) {
+
+        if (teacher.isDateAvailable(RequestData)) {
+            System.out.println("The date " + RequestData + " is available. Appointment confirmed!");
+            teacher.removeAvailableDate(RequestData);
+        } else {
+            System.out.println("The date " + RequestData + " is not available. Please try another date.");
+        }
+    }
+
 }

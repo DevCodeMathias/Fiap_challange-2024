@@ -5,8 +5,9 @@ import java.util.*;
 public class LeaderBoard {
 
     private List<Student> UsersRank;
-    //populando
-     private List<Student> Database = Arrays.asList(
+
+    //populando (não faz parte dos atributos )
+     List<Student> Database = Arrays.asList(
             new Student("Alice","Student" ,150),
             new Student("Bob","Student" ,120),
             new Student("Charlie","Student" ,100),

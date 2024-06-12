@@ -9,7 +9,6 @@ import java.util.Scanner;
 
 public class Menu {
 
-//FALAR QUE CONTARA COM OS RECURSOS DA LEPIC PARA MELHOR TILIZAÇÃO DOS RECURSOS
 
     private Scanner reader = new Scanner(System.in);
 
@@ -24,6 +23,7 @@ public class Menu {
 
     private LeaderBoard leaderBoard = new LeaderBoard();
     private Achievements userAchievements = new Achievements();
+    private Lepic Lepic = new Lepic();
     private int aux = 0;
 
     public  void Initializer(){
@@ -57,6 +57,7 @@ public class Menu {
                     2. Ver todos Desafios 
                     3. Ver Ranking
                     4. Ver Conquistas
+                    5. reservar equipamento equipamento 
                     0. Sair
                     Selecione a sua opção ->                             
                     """;
@@ -66,7 +67,9 @@ public class Menu {
                 case 1 -> intoSessionTraining(Initializer);
                 case 2 -> intoChallenge();
                 case 3 -> viewRanking();
+                case 5 -> Lepic.bookMaterial();
                 case 4 -> viewAchievements();
+
                 case 0 -> {
                     System.out.println("Saindo...");
                     reader.close();
@@ -125,4 +128,5 @@ public class Menu {
             userAchievements.displayAchievementDetails();
         }
     }
+
 }
