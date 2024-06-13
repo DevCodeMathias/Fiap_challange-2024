@@ -1,19 +1,16 @@
 package Model;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
-public class Teacher extends User  {
+public class Teacher extends User {
     private String email;
-    private List<Date>availableDates;
+    private List<String> availableDates;
 
-
-    public Teacher(String Name, String Position) {
-        super(Name, Position);
-        this.email = Name + "@LEPIC.COM.BR";
-
-
+    public Teacher(String name, String position, List<String> dates) {
+        super(name, position);
+        this.email = name + "@LEPIC.COM.BR";
+        this.availableDates = dates;
     }
 
     public String getEmail() {
@@ -24,23 +21,21 @@ public class Teacher extends User  {
         this.email = email;
     }
 
-    public List<Date> getAvailableDates() {
+    public List<String> getAvailableDates() {
         return availableDates;
     }
 
-    public void setAvailableDates(List<Date> availableDates) {
+    public void setAvailableDates(List<String> availableDates) {
         this.availableDates = availableDates;
     }
 
-    public boolean isDateAvailable(Date data) {
-        return availableDates.contains(data);
+    public boolean isDateAvailable(String date) {
+        return availableDates.contains(date);
     }
 
-    public void removeAvailableDate(Date data){
-
-        availableDates.remove(data);
+    public void removeAvailableDate(String date) {
+        availableDates.remove(date);
     }
-
 
     @Override
     public String toString() {
@@ -51,4 +46,3 @@ public class Teacher extends User  {
                 '}';
     }
 }
-

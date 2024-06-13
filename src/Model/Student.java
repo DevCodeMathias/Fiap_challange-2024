@@ -32,16 +32,16 @@ public class Student extends User {
 
     }
 
-
-
-    public void onlineAppointment(Date RequestData, Teacher teacher) {
+    public void onlineAppointment(String  RequestData, Teacher teacher) {
 
         if (teacher.isDateAvailable(RequestData)) {
             System.out.println(" A data " + RequestData + " esta disponivel e confirmada .");
             teacher.removeAvailableDate(RequestData);
         } else {
-            System.out.println("a data  " + RequestData + " não esta disponive, então tente outra.");
+            System.out.println("a data  " + RequestData + " não esta disponive.");
         }
     }
+
+    //adicionar na agenda do professor
 
 }

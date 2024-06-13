@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/src/Model/Lepic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Lepic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Service/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

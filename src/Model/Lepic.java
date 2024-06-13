@@ -2,6 +2,7 @@ package Model;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 
@@ -10,15 +11,8 @@ public class Lepic  extends inventory{
     private String email;
     private List<Teacher> teacherArrayList;
 
-    //prototipando banco de ddados e o populando
-    List<Teacher> teacherlIST  = new ArrayList<>(Arrays.asList(
-            new Teacher("John Doe", "Teacher"),
-            new Teacher("Jane Smith", "Teacher"),
-            new Teacher("Emily Johnson", "Teacher")
-    ));
-
-    public Lepic() {
-        this.teacherArrayList = teacherlIST;
+    public Lepic(List<Teacher> teacherlist) {
+        this.teacherArrayList = teacherlist;
     }
 
     public  void bookMaterial( ){

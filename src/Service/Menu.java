@@ -18,10 +18,21 @@ public class Menu {
             new Challenge("Desafio 6", "Descrição do Desafio 3", "Hard", 30)
     ));
 
+    List<String> dates = new ArrayList<>(Arrays.asList(
+            "24/05/2024",
+            "15/07/2025"
+    ));
+    List<Teacher> teacherlIST  = new ArrayList<>(Arrays.asList(
+            new Teacher("John Doe", "Teacher",dates),
+            new Teacher("Jane Smith", "Teacher", dates),
+            new Teacher("Emily Johnson", "Teacher", dates)
+    ));
+
+
 
     private LeaderBoard leaderBoard = new LeaderBoard();
     private Achievements userAchievements = new Achievements();
-    private Lepic Lepic = new Lepic(); // precisa da lista
+    private Lepic Lepic = new Lepic(teacherlIST);
     private int aux = 0;
 
     public  void Initializer(){
@@ -36,7 +47,7 @@ public class Menu {
             Student StudentInitializer = new Student(userName,"Student",0);
             ShowMenuStudent(StudentInitializer);
         } else if (userInput == 2 ) {
-            Teacher TeacherInitializer = new Teacher(userName, "Teacher");
+            Teacher TeacherInitializer = new Teacher(userName, "teacher", dates);
             ShowTeacherMenu(TeacherInitializer);
         }
 
@@ -45,7 +56,6 @@ public class Menu {
     public void ShowTeacherMenu(Teacher Initializer){
 
     }
-
 
     public void ShowMenuStudent(Student Initializer) {
         leaderBoard.getUsersRank().add(Initializer);
@@ -57,7 +67,8 @@ public class Menu {
                     4. Ver Conquistas
                     5. reservar equipamento equipamento 
                     6.avaliar app 
-                    7. Acionar Suport 
+                    7. Acionar Suporte
+                    8. marcar monitoria  
                     0. Sair
                     Selecione a sua opção ->                             
                     """;
@@ -70,6 +81,7 @@ public class Menu {
                 case 5 -> Lepic.bookMaterial();
                 case 6 ->recomandation(Initializer);
                 case 7 ->openSuport(Initializer);
+                case 8 ->checkPointment(Initializer);
                 case 4 -> viewAchievements();
 
                 case 0 -> {
@@ -147,9 +159,11 @@ public class Menu {
     }
 
     public void checkPointment(Student student){
+        Teacher teacher = Lepic.getFirstTeacher();
+        System.out.println(teacher.toString());
         System.out.println(" Qual dia seria o agendamento, este sao os disponiveis");
-
-
+        String data = reader.nextLine();
+        student.onlineAppointment(data,teacher);
 
     }
 
