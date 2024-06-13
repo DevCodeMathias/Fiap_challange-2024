@@ -1,17 +1,19 @@
 package Model;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Teacher extends User  {
     private String email;
+    private List<Date>availableDates;
 
-    private List<String> availableDates;
 
     public Teacher(String Name, String Position) {
         super(Name, Position);
         this.email = Name + "@LEPIC.COM.BR";
-        this.availableDates = new ArrayList<>();
+
+
     }
 
     public String getEmail() {
@@ -22,16 +24,31 @@ public class Teacher extends User  {
         this.email = email;
     }
 
-    public boolean isDateAvailable(String date) {
-        return availableDates.contains(date);
-    }
-
-    public void removeAvailableDate(String date) {
-        availableDates.remove(date);
-    }
-
-    public List<String> getAvailableDates() {
+    public List<Date> getAvailableDates() {
         return availableDates;
+    }
+
+    public void setAvailableDates(List<Date> availableDates) {
+        this.availableDates = availableDates;
+    }
+
+    public boolean isDateAvailable(Date data) {
+        return availableDates.contains(data);
+    }
+
+    public void removeAvailableDate(Date data){
+
+        availableDates.remove(data);
+    }
+
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "name=" + getName() +
+                ", email=" + email +
+                ", availableDates=" + availableDates +
+                '}';
     }
 }
 

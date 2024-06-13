@@ -2,10 +2,7 @@ package Service;
 
 import Model.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Menu {
 
@@ -21,9 +18,10 @@ public class Menu {
             new Challenge("Desafio 6", "Descrição do Desafio 3", "Hard", 30)
     ));
 
+
     private LeaderBoard leaderBoard = new LeaderBoard();
     private Achievements userAchievements = new Achievements();
-    private Lepic Lepic = new Lepic();
+    private Lepic Lepic = new Lepic(); // precisa da lista
     private int aux = 0;
 
     public  void Initializer(){
@@ -58,6 +56,8 @@ public class Menu {
                     3. Ver Ranking
                     4. Ver Conquistas
                     5. reservar equipamento equipamento 
+                    6.avaliar app 
+                    7. Acionar Suport 
                     0. Sair
                     Selecione a sua opção ->                             
                     """;
@@ -68,6 +68,8 @@ public class Menu {
                 case 2 -> intoChallenge();
                 case 3 -> viewRanking();
                 case 5 -> Lepic.bookMaterial();
+                case 6 ->recomandation(Initializer);
+                case 7 ->openSuport(Initializer);
                 case 4 -> viewAchievements();
 
                 case 0 -> {
@@ -127,6 +129,28 @@ public class Menu {
         } else {
             userAchievements.displayAchievementDetails();
         }
+    }
+
+    public void recomandation(User user){
+        System.out.println("De 0 a 10  o quanto você recomendaria o app para um amigo ");
+        int avalit = reader.nextInt();
+        System.out.println(" De uma nota de 0 a 10 para o app");
+        int score = reader.nextInt();
+         int useravaliation = user.evaluateApp(avalit, score);
+        System.out.println(useravaliation);
+    }
+
+    public void openSuport(User user){
+        System.out.println("Qual a ocorrencia ?");
+        String userCall = reader.nextLine();
+        user.requestSuport(userCall);
+    }
+
+    public void checkPointment(Student student){
+        System.out.println(" Qual dia seria o agendamento, este sao os disponiveis");
+
+
+
     }
 
 }

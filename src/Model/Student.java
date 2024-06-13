@@ -1,6 +1,7 @@
 package Model;
 
 import javax.naming.Name;
+import java.util.Date;
 import java.util.List;
 
 public class Student extends User {
@@ -30,17 +31,16 @@ public class Student extends User {
                         '}';
 
     }
-   // Scanner scanner = new Scanner(System.in);
-     //   System.out.println("Enter a date you would like to schedule the tutoring session (format DD/MM/YYYY): ");
-    //String requestedDate = scanner.nextLine();
 
-    public void onlineAppointment(String RequestData, Teacher teacher) {
+
+
+    public void onlineAppointment(Date RequestData, Teacher teacher) {
 
         if (teacher.isDateAvailable(RequestData)) {
-            System.out.println("The date " + RequestData + " is available. Appointment confirmed!");
+            System.out.println(" A data " + RequestData + " esta disponivel e confirmada .");
             teacher.removeAvailableDate(RequestData);
         } else {
-            System.out.println("The date " + RequestData + " is not available. Please try another date.");
+            System.out.println("a data  " + RequestData + " não esta disponive, então tente outra.");
         }
     }
 

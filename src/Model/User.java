@@ -1,6 +1,7 @@
 package Model;
 
 import java.awt.*;
+import java.util.ArrayList;
 
 public class User {
    private String UserId;
@@ -27,5 +28,19 @@ public class User {
    public void setPosition(String position) {
       Position = position;
    }
+
+   public  int  evaluateApp(int avaliation, int recomandation ){
+      int media = (avaliation + recomandation) /2;
+      return media;
+   }
+
+   public void requestSuport(String description ){
+      ArrayList<String> occurrence = new ArrayList<>();
+      occurrence.add(description);
+      System.out.println("Ocorrencia enviada com sucesso!");
+
+   }
+
+
 
 }
